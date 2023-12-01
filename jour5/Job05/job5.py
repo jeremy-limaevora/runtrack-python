@@ -1,14 +1,14 @@
-ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+alph = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-def position_alphabet(lettre):
-    return ALPHABET.find(lettre)
+def position_alph(lettre):
+    return alph.find(lettre)
 
 def cesar(message, decalage):
     resultat = ''
     for lettre in message:
-        if lettre in ALPHABET:
+        if lettre in alph:
             indice = (position_alphabet(lettre) + decalage) % 26
-            resultat += ALPHABET[indice]
+            resultat += alph[indice]
         else:
             resultat += lettre
     return resultat
