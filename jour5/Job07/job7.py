@@ -1,4 +1,4 @@
-def arrondir_notes(notes):
+def arrondie(notes):
     notes_arrondies = []
 
     for note in notes:
@@ -13,6 +13,7 @@ def arrondir_notes(notes):
                 notes_arrondies.append(note)
     return notes_arrondies
 
-notes_eleves = [83, 72, 55, 38, 91]
-notes_arrondies = arrondir_notes(notes_eleves)
-print(notes_arrondies)
+notes_eleve = [83, 72, 55, 38, 91]
+notes1 = arrondie(notes_eleve)
+print(notes1)
+
